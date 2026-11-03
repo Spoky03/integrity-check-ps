@@ -1,0 +1,29 @@
+# Lokalna konfiguracja z sekretami (webhook Discord, ścieżki vaultu)
+config/paths.psd1
+config/file-scope.txt
+
+# Artefakty vaultu / klucze — nigdy nie commitować
+*.aes
+*.key
+**/secrets/
+**/trusted_copies/
+**/logs/
+
+# Lokalne katalogi robocze
+.vault/
+IntegrityVault/
+
+# PowerShell / IDE
+*.log
+.vs/
+.vscode/
+*.ps1xml
+*.bak
+
+# Lokalne skrypty z sekretami (opcjonalne override)
+tools/local_*.py
+.env
+.env.*
+
+# Materiały prezentacji / dowody lab — lokalnie
+docs/

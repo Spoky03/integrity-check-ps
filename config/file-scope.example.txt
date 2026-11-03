@@ -1,0 +1,20 @@
+# Allowlista plików do monitorowania (jedna ścieżka na linię).
+# Linie puste i zaczynające się od # są ignorowane.
+#
+# Format opcjonalny z flagą restore:
+#   C:\path\to\file.exe
+#   C:\path\to\demo.txt|restore
+#
+# Binaria Windows (notepad/cmd) — tylko raport (bez |restore).
+# Markery labowe w drzewie Windows + demo — z |restore (Etap C przywraca).
+# Utwórz markery: .\src\Initialize-LabTargets.ps1
+
+C:\Windows\System32\notepad.exe
+C:\Windows\System32\cmd.exe
+C:\Windows\SysWOW64\notepad.exe
+C:\Windows\System32\drivers\null.sys
+
+# Sondy labowe (własne pliki — nie są binariami OS)
+C:\Windows\System32\IntegrityCheck-probe.txt|restore
+C:\Windows\Temp\IntegrityCheck-probe.txt|restore
+C:\IntegrityDemo\demo-file.txt|restore

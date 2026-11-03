@@ -1,0 +1,5 @@
+IntegrityCheck demo file — baseline content.
+Do not edit this line during a clean verify run.
+Tamper simulation appends or changes text below this marker.
+---
+OK

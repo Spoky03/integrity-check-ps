@@ -1,0 +1,5 @@
+IntegrityCheck SYSTEM probe — baseline content.
+Path role: lab marker under Windows (not a real OS binary).
+Do not edit during a clean verify run.
+---
+OK
